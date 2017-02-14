@@ -6,8 +6,9 @@ $(document).ready(function() {
 
     // $("#contact-form").validate({
     //   submitHandler: function(form) {
-        $('#contact-form').on('submit', function(e) {
-        e.preventDefault();
+
+
+        $('#contact-form').submit(function(e) {
 
         //get the name field value
         var name = $('#name').val();
