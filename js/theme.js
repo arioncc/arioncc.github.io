@@ -4,15 +4,17 @@
 
 $(document).ready(function() {
 
-    $("#contact-form").validate({
-      submitHandler: function(form) {
+    // $("#contact-form").validate({
+    //   submitHandler: function(form) {
+        $('#contact-form').on('submit', function(e) {
+        e.preventDefault();
 
         //get the name field value
         var name = $('#name').val();
         //get the name field value
         var email = $('#email').val();
         //get the comments
-        var comments = $('#message').val();
+        var message = $('#message').val();
 
         // // validate via jquery
         // $("#contact-form").validate();
@@ -35,14 +37,12 @@ $(document).ready(function() {
                 $('#thankyouBlock').fadeIn();
             },
             error: function() {
+                console.log('error');
                 $("#submit-errors").fadeIn();
             }
 
         });
-    }
-
-});
-
+    });
 });
 
 
