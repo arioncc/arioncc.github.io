@@ -1,32 +1,32 @@
 @font-face {
 	font-family: 'Futura (Light)';
-	src: url('FuturaLight.eot');
-	src: local('Futura (Light)'), local('FuturaLight'),
-	url('FuturaLight.eot?#iefix') format('embedded-opentype'),
-	url('FuturaLight.woff') format('woff'),
-	url('FuturaLight.ttf') format('truetype');
+	src: url('F/fonts/uturaLight.eot');
+	src: local('/fonts/Futura (Light)'), local('/fonts/FuturaLight'),
+	url('/fonts/FuturaLight.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/FuturaLight.woff') format('woff'),
+	url('/fonts/FuturaLight.ttf') format('truetype');
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Futura Bk';
-	src: url('Futura-Book.eot');
-	src: local('Futura Book'), local('Futura-Book'),
-	url('Futura-Book.eot?#iefix') format('embedded-opentype'),
-	url('Futura-Book.woff') format('woff'),
-	url('Futura-Book.ttf') format('truetype');
+	src: url('/fonts/Futura-Book.eot');
+	src: local('/fonts/Futura Book'), local('/fonts/Futura-Book'),
+	url('/fonts/Futura-Book.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/Futura-Book.woff') format('woff'),
+	url('/fonts/Futura-Book.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Futura Bk';
-	src: url('Futura-Book_1.eot');
-	src: local('Futura Book'), local('Futura-Book'),
-	url('Futura-Book_1.eot?#iefix') format('embedded-opentype'),
-	url('Futura-Book_1.woff') format('woff'),
-	url('Futura-Book_1.ttf') format('truetype');
+	src: url('/fonts/Futura-Book_1.eot');
+	src: local('/fonts/Futura Book'), local('/fonts/Futura-Book'),
+	url('/fonts/Futura-Book_1.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/Futura-Book_1.woff') format('woff'),
+	url('/fonts/Futura-Book_1.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
