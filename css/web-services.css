@@ -4,7 +4,7 @@
 }
 .parallax-web-intro {
   position: relative;
-  background-position: 0% 100%;
+  background-position: 0% 0%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-background-size: contain: ;
