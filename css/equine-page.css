@@ -3,8 +3,8 @@
   background-position: 0% -150%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  -webkit-background-size: cover: ;
-    background-size: cover;
+  -webkit-background-size: contain: ;
+    background-size: contain;
 }
 /* ===== Begin intro ===== */
 /* Begin text intro */

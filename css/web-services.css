@@ -7,8 +7,8 @@
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  -webkit-background-size: inherit: ;
-    background-size: cover;
+  -webkit-background-size: contain: ;
+    background-size: contain;
 }
 #web-intro-section .container {
   height: 100%;
