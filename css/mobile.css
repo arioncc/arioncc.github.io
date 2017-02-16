@@ -200,17 +200,17 @@
 	}
 	#equine-section {
 		background-position: 0px 0px !important;
-		background-size: 100% !important;
+		background-size: 200% !important;
 		height: 100% !important;
 	}
 	#web-intro-section {
-		background-position: 0px 0px !important;
-		background-size: 100% !important;
+		background-position: 0px 100px !important;
+		background-size: 200% !important;
 		height: 100% !important;
 	}
 	#data-section {
-		background-position: 0px 0px !important;
-		background-size: 100% !important;
+		background-position: -150px 100px !important;
+		background-size: contain !important;
 		height: 100% !important;
 	}
 }
