@@ -194,6 +194,25 @@
 		float: none !important;
 		text-align: center !important;
 	}
+	#intro-section {
+		background-position: 0px 100px !important;
+		background-size: 200% !important;
+	}
+	#equine-section {
+		background-position: 0px 0px !important;
+		background-size: 200% !important;
+		height: 100% !important;
+	}
+	#web-intro-section {
+		background-position: 0px 100px !important;
+		background-size: 200% !important;
+		height: 100% !important;
+	}
+	#data-section {
+		background-position: -200px 50px !important;
+		background-size: 200% !important;
+		height: 100% !important;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -218,25 +237,7 @@
 	.contacts {
 	font-size: 80%;
 	}
-	#intro-section {
-		background-position: 0px 100px !important;
-		background-size: 200% !important;
-	}
-	#equine-section {
-		background-position: 0px 0px !important;
-		background-size: 200% !important;
-		height: 100% !important;
-	}
-	#web-intro-section {
-		background-position: 0px 100px !important;
-		background-size: 200% !important;
-		height: 100% !important;
-	}
-	#data-section {
-		background-position: -200px 50px !important;
-		background-size: 200% !important;
-		height: 100% !important;
-	}
+
 }
 
 /* Custom, iPhone Retina */
