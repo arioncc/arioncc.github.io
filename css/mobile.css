@@ -195,8 +195,8 @@
 		text-align: center !important;
 	}
 	#intro-section {
-		background-position: center !important;
-		background-size: contain;
+		background-position: 0px 100px !important;
+		background-size: 200% !important;
 	}
 	#equine-section {
 		background-position: 0px 0px !important;
