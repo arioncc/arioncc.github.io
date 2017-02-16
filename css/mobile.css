@@ -215,9 +215,24 @@
 	.contacts {
 		float: none !important;
 	}
-
+	#intro-section {
+		background-position: center !important;
+		background-size: 200% !important;
+	}
 	#equine-section {
-		background-position: 25% -75px !important;
+		background-position: 0px 0px !important;
+		background-size: 200% !important;
+		height: 100% !important;
+	}
+	#web-intro-section {
+		background-position: center !important;
+		background-size: 200% !important;
+		height: 100% !important;
+	}
+	#data-section {
+		background-position: center !important;
+		background-size: 200% !important;
+		height: 100% !important;
 	}
 	.contacts {
 	font-size: 80%;
