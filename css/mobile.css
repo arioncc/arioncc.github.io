@@ -183,9 +183,9 @@
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
-	#equine-section {
+/*	#equine-section {
 		background-position: 5% -75px !important;
-	}
+	}*/
 	.web-intro-text {
 		float: none !important;
 		text-align: center !important;
@@ -193,6 +193,25 @@
 	.intro-text {
 		float: none !important;
 		text-align: center !important;
+	}
+	#intro-section {
+		background-position: center !important;
+		background-size: contain;
+	}
+	#equine-section {
+		background-position: 0px 0px !important;
+		background-size: 100% !important;
+		height: 100% !important;
+	}
+	#web-intro-section {
+		background-position: 0px 0px !important;
+		background-size: 100% !important;
+		height: 100% !important;
+	}
+	#data-section {
+		background-position: 0px 0px !important;
+		background-size: 100% !important;
+		height: 100% !important;
 	}
 }
 
