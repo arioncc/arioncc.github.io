@@ -210,7 +210,7 @@
 	}
 	#data-section {
 		background-position: -175px 50px !important;
-		background-size: contain !important;
+		background-size: 200% !important;
 		height: 100% !important;
 	}
 }
