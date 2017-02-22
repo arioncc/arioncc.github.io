@@ -292,8 +292,6 @@ bootstrapjs.src = "inc/bootstrap/js/bootstrap.min.js";
 var stellarjs = document.createElement("script");
 stellarjs.src = "inc/stellar/js/jquery.stellar.min.js";
 
-var themejs = document.createElement("script");
-themejs.src = "js/theme.js";
 
 var easingjs = document.createElement("script");
 easingjs.src = "inc/jquery.easing.min.js";
@@ -304,8 +302,10 @@ smoothjs.src = "inc/smoothscroll.js";
 var wowjs = document.createElement("script");
 wowjs.src = "inc/animations/js/wow.min.js";
 
+var themejs = document.createElement("script");
+themejs.src = "js/theme.js";
 
-   function loadthemejs() {
+function loadthemejs() {
     document.body.appendChild(themejs);
     document.getElementById("page-loader").style.display = "none";
 }
@@ -313,14 +313,13 @@ wowjs.src = "inc/animations/js/wow.min.js";
     document.body.appendChild(jqueryElement);
 function load() {
     document.body.appendChild(jqvalidatejs);
-    document.body.appendChild(bootstrapjs)
+    document.body.appendChild(bootstrapjs);
     document.body.appendChild(stellarjs);
     document.body.appendChild(easingjs);
     document.body.appendChild(smoothjs);
     document.body.appendChild(wowjs);
     loadthemejs();
 }
-
 </script>
 
 
