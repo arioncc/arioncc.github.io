@@ -335,17 +335,14 @@
 // document.body.appendChild(element);
 // }
 if (window.addEventListener) {
-    console.log("if")
 window.addEventListener("load", load, false);
 }
 else if (window.attachEvent) {
-        console.log("else if")
 
 window.attachEvent("onload", load);
 }
 
 else window.onload = load; {
-    console.log("else")
 }
 
 
