@@ -43,14 +43,11 @@
     <link rel="stylesheet" href="inc/animations/css/animate.min.css">
     <link rel="stylesheet" href="inc/font-awesome/css/font-awesome.min.css">
     <!-- Font Icons -->
-    <link rel="stylesheet" href="inc/owl-carousel/css/owl.carousel.css">
-    <link rel="stylesheet" href="inc/owl-carousel/css/owl.theme.css">
+<!--     <link rel="stylesheet" href="inc/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="inc/owl-carousel/css/owl.theme.css"> -->
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/web-services.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/et-line.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -73,7 +70,7 @@
 </head>
 
 <body data-spy="scroll" data-target="#main-navbar">
-    <div class="page-loader"></div>  <!-- Display loading image while page loads -->
+    <div id="page-loader" class="page-loader"></div>  <!-- Display loading image while page loads -->
     <div class="body">
 
         <!--========== BEGIN HEADER ==========-->
@@ -343,22 +340,83 @@
 
 
 <!-- Plugins JS -->
-<script src="inc/jquery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+// function downloadJSAtOnload() {
+// var element = document.createElement("script");
+// element.src = "defer.js";
+// document.body.appendChild(element);
+// }
+if (window.addEventListener) {
+    console.log("if")
+window.addEventListener("load", load, false);
+}
+else if (window.attachEvent) {
+        console.log("else if")
+
+window.attachEvent("onload", load);
+}
+
+else window.onload = load; {
+    console.log("else")
+}
+
+
+
+var jqueryElement = document.createElement("script");
+jqueryElement.src = "inc/jquery/jquery-1.11.1.min.js";
+
+var jqvalidatejs = document.createElement("script");
+jqvalidatejs.src = "https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js";
+
+var bootstrapjs = document.createElement("script");
+bootstrapjs.src = "inc/bootstrap/js/bootstrap.min.js";
+
+var stellarjs = document.createElement("script");
+stellarjs.src = "inc/stellar/js/jquery.stellar.min.js";
+
+var themejs = document.createElement("script");
+themejs.src = "js/theme.js";
+
+var easingjs = document.createElement("script");
+easingjs.src = "inc/jquery.easing.min.js";
+
+var smoothjs = document.createElement("script");
+smoothjs.src = "inc/smoothscroll.js";
+
+
+
+// add the first script element
+
+    document.body.appendChild(jqueryElement);
+function load() {
+  document.body.appendChild(jqvalidatejs);
+  document.body.appendChild(bootstrapjs)
+  document.body.appendChild(stellarjs);
+  document.body.appendChild(themejs);
+   document.body.appendChild(easingjs);
+  document.body.appendChild(smoothjs);
+  document.getElementById("page-loader").style.display = "none";
+}
+
+
+</script>
+
+
+<!-- <script src="inc/jquery/jquery-1.11.1.min.js"></script>
 <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
-<script src="inc/bootstrap/js/bootstrap.min.js"></script>
-<!--             <script src="inc/owl-carousel/js/owl.carousel.min.js"></script>
--->            <script src="inc/stellar/js/jquery.stellar.min.js"></script>
+<script src="inc/bootstrap/js/bootstrap.min.js"></script> -->
+<!--     <script src="inc/owl-carousel/js/owl.carousel.min.js"></script>
+-->
+<!-- <script src="inc/stellar/js/jquery.stellar.min.js"></script> -->
 <script src="inc/animations/js/wow.min.js"></script>
-<!--             <script src="inc/waypoints.min.js"></script>
-    <script src="inc/isotope.pkgd.min.js"></script> -->
-<!--             <script src="inc/classie.js"></script>
--->            <script src="inc/jquery.easing.min.js"></script>
-<!--             <script src="inc/jquery.counterup.min.js"></script>
--->            <script src="inc/smoothscroll.js"></script>
+<!--     <script src="inc/waypoints.min.js"></script> -->
+<!--     <script src="inc/isotope.pkgd.min.js"></script -->>
+<!-- <script src="inc/jquery.easing.min.js"></script>
+ --><!-- <script src="inc/smoothscroll.js"></script> -->
 
 <!-- Theme JS -->
-<script src="js/theme.js"></script>
-
+<!-- <script src="js/theme.js"></script>
+ -->
 </body>
 
 
