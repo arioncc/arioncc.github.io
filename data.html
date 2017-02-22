@@ -324,24 +324,15 @@
 
 
 
-<!-- Plugins JS -->
+<!-- JS -->
 <script type="text/javascript">
-// function downloadJSAtOnload() {
-// var element = document.createElement("script");
-// element.src = "defer.js";
-// document.body.appendChild(element);
-// }
 if (window.addEventListener) {
-window.addEventListener("load", load, false);
+    window.addEventListener("load", load, false);
+} else if (window.attachEvent) {
+    window.attachEvent("onload", load);
+} else {
+    window.onload = load;
 }
-else if (window.attachEvent) {
-
-window.attachEvent("onload", load);
-}
-
-else window.onload = load; {
-}
-
 
 
 var jqueryElement = document.createElement("script");
@@ -365,19 +356,20 @@ easingjs.src = "inc/jquery.easing.min.js";
 var smoothjs = document.createElement("script");
 smoothjs.src = "inc/smoothscroll.js";
 
+var wowjs = document.createElement("script");
+wowjs.src = "inc/animations/js/wow.min.js";
 
 
-// add the first script element
-
-  document.body.appendChild(jqueryElement);
+    document.body.appendChild(jqueryElement);
 function load() {
-  document.body.appendChild(jqvalidatejs);
-  document.body.appendChild(bootstrapjs)
-  document.body.appendChild(stellarjs);
-   document.body.appendChild(easingjs);
-  document.body.appendChild(smoothjs);
-  document.body.appendChild(themejs);
-  document.getElementById("page-loader").style.display = "none";
+    document.body.appendChild(jqvalidatejs);
+    document.body.appendChild(bootstrapjs)
+    document.body.appendChild(stellarjs);
+    document.body.appendChild(easingjs);
+    document.body.appendChild(smoothjs);
+    document.body.appendChild(wowjs);
+    document.body.appendChild(themejs);
+    document.getElementById("page-loader").style.display = "none";
 }
 
 </script>
@@ -389,8 +381,8 @@ function load() {
 <!--     <script src="inc/owl-carousel/js/owl.carousel.min.js"></script>
 -->
 <!-- <script src="inc/stellar/js/jquery.stellar.min.js"></script> -->
-<script src="inc/animations/js/wow.min.js"></script>
-<!--     <script src="inc/waypoints.min.js"></script> -->
+<!-- <script src="inc/animations/js/wow.min.js"></script>
+ --><!--     <script src="inc/waypoints.min.js"></script> -->
 <!--     <script src="inc/isotope.pkgd.min.js"></script -->>
 <!-- <script src="inc/jquery.easing.min.js"></script>
  --><!-- <script src="inc/smoothscroll.js"></script> -->
