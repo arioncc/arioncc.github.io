@@ -359,6 +359,10 @@ smoothjs.src = "inc/smoothscroll.js";
 var wowjs = document.createElement("script");
 wowjs.src = "inc/animations/js/wow.min.js";
 
+function loadthemejs() {
+    document.body.appendChild(themejs);
+    document.getElementById("page-loader").style.display = "none";
+}
 
     document.body.appendChild(jqueryElement);
 function load() {
@@ -368,8 +372,7 @@ function load() {
     document.body.appendChild(easingjs);
     document.body.appendChild(smoothjs);
     document.body.appendChild(wowjs);
-    document.body.appendChild(themejs);
-    document.getElementById("page-loader").style.display = "none";
+    loadthemejs();
 }
 
 </script>
