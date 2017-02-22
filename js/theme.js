@@ -2,7 +2,7 @@
 // Contact Form AJAX via Formspree.io
 /////////////////////////////////////////////////////////////////////
 
-$(document).ready(function() {
+$(window).load(function() {
 
     // $("#contact-form").validate({
     //   submitHandler: function(form) {
